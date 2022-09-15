@@ -21,7 +21,7 @@ private int sid;
 @Column(name="sname")
 private String name;
 private String email;
-private int phoneno;
+private String phoneno;
 }
 
 
