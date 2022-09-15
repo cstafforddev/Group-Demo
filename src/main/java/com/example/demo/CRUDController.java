@@ -30,8 +30,8 @@ public class CRUDController {
 		log.info("inside the insert");
 		Student s=new Student();
 		s.setName(request.getParameter("name"));
-		s.setPhoneno(Integer.parseInt(request.getParameter("phono")));
 		s.setEmail(request.getParameter("email"));
+		s.setPhoneno(request.getParameter("phoneno"));
 		log.info(s.getPhoneno()+"   "+s.getName()+" "+s.getEmail());
 		Student ss=dao.insert(s);
 		if(ss!=null) {
